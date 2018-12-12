@@ -1,2 +1,2 @@
 # subsidia-experience
-Some public experience stuf
+Some public experience stuff

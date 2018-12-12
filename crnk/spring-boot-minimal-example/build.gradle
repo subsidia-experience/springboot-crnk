@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+apply plugin: 'application'
+
+mainClassName = "io.crnk.example.springboot.minimal.MinimalSpringBootApplication"
+
+dependencies {
+
+	compile project('io.crnk:crnk-setup-spring-boot2:2.10.20181129142450')
+	compile project('io.crnk:crnk-home:2.10.20181129142450')
+
+	compile 'org.springframework.boot:spring-boot-starter-web:2.0.3.RELEASE'
+
+	testCompile project('io.crnk:crnk-client:2.10.20181129142450')
+	testCompile 'com.squareup.okhttp3:okhttp:3.4.1'
+	testCompile 'com.jayway.restassured:rest-assured:2.9.0'
+	testCompile 'com.jayway.restassured:json-schema-validator:2.9.0'
+	testCompile 'org.springframework.boot:spring-boot-starter-test:2.0.3.RELEASE'
+	testCompile 'commons-io:commons-io:1.3.2'
+
+}
